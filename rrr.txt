@@ -1,0 +1,47 @@
+ public class MATERIAL_REQ_DATA_LIST
+    {
+        public decimal REQUISITION_ID { get; set; }
+        public string REQUISITION_CODE { get; set; }
+        public string REQUISITION_DATE { get; set; }
+        public string Material_Name { get; set; }
+        public decimal QUANTITY { get; set; }
+        public string UNIT { get; set; }
+        public string EXPECTED_DEL_DATE { get; set; }
+
+
+    }
+
+
+
+
+   public class Material_Req_List
+        {
+            public int? REQUISITION_ID { get; set; }
+
+            [DataType(DataType.Date)]
+            [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+            public Nullable<System.DateTime> From_DT { get; set; }
+
+            [DataType(DataType.Date)]
+            [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+            public Nullable<System.DateTime> To_DT { get; set; }
+         
+            public string BRANCH_CODE { get; set; }
+            public SelectList BRANCH_LIST { get; set; }
+              public bool isSelected { get; set; }
+
+        }
+
+
+   public class MATERIAL_REQ_DATA_LIST
+    {
+        public decimal REQUISITION_ID { get; set; }
+        public string REQUISITION_CODE { get; set; }
+        public string REQUISITION_DATE { get; set; }
+        public string Material_Name { get; set; }
+        public decimal QUANTITY { get; set; }
+        public string UNIT { get; set; }
+        public string EXPECTED_DEL_DATE { get; set; }
+
+
+    }
